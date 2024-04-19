@@ -16,17 +16,17 @@ public class Verificacion {
 
     public static boolean validarCedula(String cedula) {
         
-        return Pattern.matches("^[0-9]-[0-9]{3}-[0-9]{4}$", cedula);
+        return Pattern.matches("^[A-Z]-[0-9]-[0-9]{1,5}-[0-9]{1,5}|[0-9]-[0-9]{1,5}-[0-9]{1,5}$", cedula);
     }
 
     public static boolean validarCorreo(String correo) {
         
-        return Pattern.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$", correo);
+        return Pattern.matches("^[A-Za-z0-9._%+-]+@[(G-gmail|H-hotmail|O-outlook|]+.[A-Z|a-z]{2,}$", correo);
     }
 
     public static boolean validarContrasena(String contrasena) {
 
-        return Pattern.matches("^[a-zA-Z0-9._%+-]{10}$", contrasena);
+        return Pattern.matches("^[a-zA-Z0-9._%+!#$/()=?¡-]{10}$", contrasena);
     }
 }
 

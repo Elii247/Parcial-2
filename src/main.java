@@ -11,6 +11,7 @@ public class main {
 
         while (continuar) {
             ///Introduccion por teclado//
+            System.out.println("Ingrese informacion de Usuario");
             System.out.println("\nIngrse su nombre: ");
             nombre = scanner.next();
             if (!Verificacion.validarNombre(nombre)) {
@@ -28,7 +29,7 @@ public class main {
             System.out.println("\nIngrese su cedula: ");
             cedula = scanner.next();
             if (!Verificacion.validarCedula(cedula)) {
-                System.out.println("Cedula invalida. Solo debe tener numeros" + cedula);
+                System.out.println("Cedula invalida. Solo debe tener numeros,Giones o una letra al empezar(en caso de ser extranjero)\t" + cedula);
                 scanner.nextLine();
             }
             System.out.println("\nCorreo electronico: ");
@@ -53,7 +54,7 @@ public class main {
                 System.out.println("Informacion no valida");
             }
 
-            System.out.println("Quiere introducir mas informacion? (S/N)");
+            System.out.println("\nQuiere introducir mas informacion? (S/N)");
             respuesta = scanner.next();
             continuar = respuesta.equalsIgnoreCase("S");
 
