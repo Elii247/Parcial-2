@@ -16,6 +16,8 @@ public class main {
             nombre = scanner.next();
             if (!Verificacion.validarNombre(nombre)) {
                 System.out.println("Nombre invalido. debe tener letras y espacios");
+                System.out.println("Ingrese Nuevamente el Nombre");
+                nombre = scanner.nextLine();
                 scanner.nextLine();
             }
 
@@ -23,6 +25,8 @@ public class main {
             apellido = scanner.next();
             if (!Verificacion.validarApellido(apellido)) {
                 System.out.println("Apellido invalido.solo debe tener letras y espacios");
+                System.out.println("Ingrese Nuevamente el Apellido");
+                apellido = scanner.nextLine();
                 scanner.nextLine();
             }
 
@@ -30,12 +34,16 @@ public class main {
             cedula = scanner.next();
             if (!Verificacion.validarCedula(cedula)) {
                 System.out.println("Cedula invalida. Solo debe tener numeros,Giones o una letra al empezar(en caso de ser extranjero)\t" + cedula);
+                System.out.println("Ingrese Nuevamente la Cedula");
+                cedula = scanner.next();
                 scanner.nextLine();
             }
             System.out.println("\nCorreo electronico: ");
             correo = scanner.next();
             if (!Verificacion.validarCorreo(correo)) {
                 System.out.println("Correo electronico invalido");
+                System.out.println("Ingrese Nuevamente el Correo");
+                correo = scanner.next();
                 scanner.nextLine();
             }
 
@@ -43,6 +51,8 @@ public class main {
             contrase = scanner.next();
             if (!Verificacion.validarContrasena(contrase)) {
                 System.out.println("Contraseña incorrecta");
+                System.out.println("Ingrese Nuevamente la contraseñawe");
+                contrase = scanner.next();
                 scanner.nextLine();
             }
 

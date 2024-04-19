@@ -6,12 +6,12 @@ public class Verificacion {
 
     public static boolean validarNombre(String nombre) {
 
-        return Pattern.matches("^[a-zA-ZÁÉÍÓÚÑáéíóúñ\\s]{2,50}$", nombre);
+        return Pattern.matches("^[A-Z][a-zA-Z ]{2,50}$", nombre);
     }
 
     public static boolean validarApellido(String apellido) {
         
-        return Pattern.matches("^[a-zA-ZÁÉÍÓÚÑáéíóúñ\\s]{2,50}$", apellido);
+        return Pattern.matches("^[A-Z][a-zA-Z ]{2,50}$", apellido);
     }
 
     public static boolean validarCedula(String cedula) {
@@ -26,7 +26,7 @@ public class Verificacion {
 
     public static boolean validarContrasena(String contrasena) {
 
-        return Pattern.matches("^[a-zA-Z0-9._%+!#$/()=?¡-]{10}$", contrasena);
+        return Pattern.matches("^[a-zA-Z0-9._%+!#$/()=?¡@-]{10}$", contrasena);
     }
 }
 
