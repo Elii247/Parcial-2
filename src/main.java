@@ -47,7 +47,7 @@ public class main {
             }
 
             Usuario infoUsuario = new Usuario(nombre, apellido, cedula, correo, contrase);
-            ///ERROR AL FINAL DE LA PANTALLA
+
             if (infoUsuario.validar()) {
                 System.out.println("Registro extoso. !Bienvenido, " + infoUsuario.getNombre());
             } else {
